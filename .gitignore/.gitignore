@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) { int no;
+
+do{
+    printf("Enter an integer.\n");
+    scanf("%d", &no);
+    if(no <= 0)
+        puts("'\a''\a''\a'Don't enter the non-integer.\n");
+
+    }while(no <= 0);
+        printf("The backwards of the integer is \n");
+
+while(no > 0){
+                printf("%d", no % 10);
+                no /= 10;
+                }
+    puts(".");
+
+    return 0;
+}
